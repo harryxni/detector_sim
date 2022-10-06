@@ -165,7 +165,7 @@ void detector_sim(int start_num, int end_num){
 
 				Double_t x_1 = diffusion->Gaus(xPos, sigma);
 				Double_t y_1 = diffusion->Gaus(yPos, sigma);
-				toa.push_back(TMath::Floor(calc_toa(depZ[j])/5));
+				toa.push_back(TMath::Floor(calc_toa(depZ[j])/20));
 				pix_bins.push_back(dHist->Fill(x_1, y_1));
 				
 			}
