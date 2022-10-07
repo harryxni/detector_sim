@@ -55,7 +55,7 @@ void detector_sim(int start_num, int end_num){
 	TFile* f = new TFile("/data/damic/selena/nix-sim-results/3MeV_0dl.root");
 
 	TTree* t= (TTree*) f->Get("out");
-	:ouble diff_factor = .00323;
+	double diff_factor = .00323;
 	int nEvents = t->GetEntries();
 	int n=23000;
 	Int_t event_id;
